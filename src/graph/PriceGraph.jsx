@@ -11,7 +11,6 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { color } from "chart.js/helpers";
 
 ChartJS.register(
   CategoryScale,

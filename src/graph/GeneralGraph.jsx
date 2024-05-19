@@ -10,9 +10,7 @@ import {
   Title,
   Tooltip,
   Legend,
-  layouts,
 } from "chart.js";
-import { color } from "chart.js/helpers";
 
 ChartJS.register(
   CategoryScale,
@@ -57,7 +55,7 @@ export default function PriceGraph({ url, pricesClass, namesClass, label }) {
         p.innerText.trim()
       );
 
-      if (label == "Хлеб Перекресток") {
+      if (label === "Хлеб Перекресток") {
         let prices1 = [];
 
         for (let i = 0; i < prices.length; i++) {
