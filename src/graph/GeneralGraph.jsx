@@ -82,6 +82,7 @@ export default function PriceGraph({ url, pricesClass, namesClass, label }) {
       });
     };
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="container">

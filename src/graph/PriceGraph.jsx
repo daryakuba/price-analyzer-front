@@ -70,9 +70,9 @@ export default function PriceGraph({ item_id, item_name }) {
           },
         ],
       });
-      //console.log("set");
     };
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   //console.log(dataChart);
   return (
