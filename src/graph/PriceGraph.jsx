@@ -41,8 +41,7 @@ export default function PriceGraph({ item_id, item_name }) {
   });
 
   const url =
-    "https://priceanalyzerback.railway.internal:8080/base/getByProduct/" +
-    item_id;
+    "https://priceanalyzerback.railway.internal/base/getByProduct/" + item_id;
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(url);
